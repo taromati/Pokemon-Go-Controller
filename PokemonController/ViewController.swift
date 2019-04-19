@@ -20,7 +20,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func moveInterval() -> Double {
-        return Double("0.0000\(40 + (rand() % 20))")!
+        return Double("0.0000\(40 + (arc4random() % 20))")!
     }
     
     func randomNumberBetween(firstNumber: Double, secondNumber: Double) -> Double{
